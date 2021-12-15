@@ -1,0 +1,4 @@
+name: TestPluginStuff
+version: 1.0.0
+main: io.github.FweeGamerHD.testpluginstuff
+api-version: '1.18.1'
