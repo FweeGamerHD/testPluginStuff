@@ -15,7 +15,7 @@ public class CommandKit implements CommandExecutor {
 
             ItemStack diamond = new ItemStack(Material.DIAMOND);
 
-            ItemStack bricks = new ItemStack(Material.BRICK, 69);
+            ItemStack bricks = new ItemStack(Material.BRICK, 15);
 
             player.getInventory().addItem(bricks, diamond);
         }
