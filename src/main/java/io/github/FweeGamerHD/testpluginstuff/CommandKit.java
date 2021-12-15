@@ -13,11 +13,10 @@ public class CommandKit implements CommandExecutor {
         if (sender instanceof Player){
             Player player = (Player) sender;
 
-            ItemStack diamond = new ItemStack(Material.DIAMOND);
+            ItemStack diamondsword = new ItemStack(Material.DIAMOND_SHOVEL);
+            ItemStack diamondchest = new ItemStack(Material.DIAMOND_CHESTPLATE);
 
-            ItemStack bricks = new ItemStack(Material.BRICK, 15);
-
-            player.getInventory().addItem(bricks, diamond);
+            player.getInventory().addItem(diamondsword, diamondchest);
         }
 
         return true;
