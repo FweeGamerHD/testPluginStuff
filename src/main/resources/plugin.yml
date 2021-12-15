@@ -1,4 +1,4 @@
 name: TestPluginStuff
 version: 1.0.0
-main: io.github.FweeGamerHD.testpluginstuff
+main: io.github.FweeGamerHD.TestPluginStuff
 api-version: 1.18
