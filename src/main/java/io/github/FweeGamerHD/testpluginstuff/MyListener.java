@@ -14,6 +14,6 @@ public class MyListener implements Listener {
     }
 
     public void onExampleEvent(ExampleEvent event) {
-
+        Bukkit.broadcastMessage("Heyho, this is just a test message");
     }
 }
