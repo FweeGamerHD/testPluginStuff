@@ -5,15 +5,16 @@ import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
 
 public class MyListener implements Listener {
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event){
-        event.setJoinMessage(ChatColor.AQUA + "[" + ChatColor.RED + "+" + ChatColor.AQUA + "]" + event.getPlayer().getName());
+        event.setJoinMessage(ChatColor.AQUA + "[" + ChatColor.RED + "+" + ChatColor.AQUA + "] " + ChatColor.GRAY + event.getPlayer().getName());
     }
-
-    public void onExampleEvent(ExampleEvent event) {
-        Bukkit.broadcastMessage("Heyho, this is just a test message");
+    @EventHandler
+    public void onPlayerLeave(PlayerQuitEvent event){
+        event.setQuitMessage(ChatColor.AQUA + "[" + ChatColor.RED + "-" + ChatColor.AQUA + "] " + ChatColor.GRAY + event.getPlayer().getName());
     }
 }
