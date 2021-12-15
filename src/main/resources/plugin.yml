@@ -2,3 +2,8 @@ name: TestPluginStuff
 version: 1.0.0
 main: io.github.FweeGamerHD.testpluginstuff.TestPluginStuff
 api-version: 1.18
+commands:
+  kit:
+    description: Gives you some items, they suck but eh, idc
+    usage: /<command>
+    permission: testpluginstuff.kitpermission

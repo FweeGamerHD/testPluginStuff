@@ -6,6 +6,7 @@ public class TestPluginStuff extends JavaPlugin {
     @Override
     public void onEnable(){
         getLogger().info("onEnable has been called!");
+        this.getCommand("kit").setExecutor(new CommandKit());
     }
     @Override
     public void onDisable(){
